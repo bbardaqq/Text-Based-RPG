@@ -49,6 +49,7 @@ function handleCommand(input) {
       let hasar = calculateDamage();
       PasliKilic.Durability --;
       target.hp -= hasar;
+      log(hasar);
       log(` ${target.name} adli canavara ${hasar} hasar verdin! (HP: ${target.hp})`);
       log(`Pasli kilic koreliyor! ${PasliKilic.Durability}/10`)
     } else if (calculateHitChance(player,target) == 0){
