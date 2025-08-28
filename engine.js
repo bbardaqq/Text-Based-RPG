@@ -16,8 +16,8 @@ let enemies = [
 
 let PasliKilic = {
     Durability: 10,
-    Attack1: 8,
-    Attack2: 12
+    Attack1: 2,
+    Attack2: 6
 
 };
 
@@ -49,6 +49,7 @@ function handleCommand(input) {
       let hasar = calculateDamage();
       PasliKilic.Durability --;
       target.hp -= hasar;
+      log(` ${target.name} adli canavara ${hasar} hasar verdin! (HP: ${target.hp})`);
       log(`Pasli kilic koreliyor! ${PasliKilic.Durability}/10`)
     } else if (calculateHitChance(player,target) == 0){
       log("Iskaladin!");
