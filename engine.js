@@ -4,7 +4,7 @@ import { calculateHitChance, calculateDamage } from './calculations.js';
 let player = {
   name: "Hero",
   hp: 20,
-  attack: 5,
+  attack: 15,
   acc: 80,
   dodge: 5
 };
@@ -46,7 +46,7 @@ function handleCommand(input) {
 
     // oyuncu saldirisi
     if (calculateHitChance(player.acc,target.dodge,0) == 1) { // burasi duzeltilecek. Buraya calculations.js'den saldiri ve vurus ihtimali cekecegiz. If ile vurup vuramadigini kontrol edip ardindan hasari hesaplattiracagiz.
-      let hasar = calculateDamage();
+      let hasar = calculateDamage(PasliKilic.Attack1,PasliKilic.Attack2,0,player.attack);
       PasliKilic.Durability --;
       target.hp -= hasar;
       log(hasar);
