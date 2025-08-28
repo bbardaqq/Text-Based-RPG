@@ -1,6 +1,6 @@
 
 //Vurus Ihtimali
-function calculateHitChance(acc,dodge,bonus) {
+export function calculateHitChance(acc,dodge,bonus) {
     // Basit bir ornek: %75 taban, saldirganin agi'si eklenir
 
     let num1 = acc;   // saldiranin acc'si
@@ -24,7 +24,7 @@ function calculateHitChance(acc,dodge,bonus) {
 }
 
 // Hasar hesaplama
-function calculateDamage(attack1,attack2, bonus ,baseskill) { // silahi gir, bonusu gir (saldirdigi skill falan olabilir), heronun base skillini gir. Fonksiyonlardan fonksiyona degisecek. Ornegin hero.str gibi.
+export function calculateDamage(attack1,attack2, bonus ,baseskill) { // silahi gir, bonusu gir (saldirdigi skill falan olabilir), heronun base skillini gir. Fonksiyonlardan fonksiyona degisecek. Ornegin hero.str gibi.
     
     let num1 = attack1; //aralik1 
     let num2 = attack2; //aralik2 
