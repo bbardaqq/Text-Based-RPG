@@ -1,6 +1,6 @@
 
-/*
- Vurus ihtimali hesaplama
+
+// Vurus ihtimali hesaplama
  export function calculateHitChance(acc,dodge,bonus) {
     // Basit bir ornek: %75 taban, saldirganin agi'si eklenir
     let base = 0.75;
@@ -49,4 +49,3 @@
     return result;
     
 }
-*/
